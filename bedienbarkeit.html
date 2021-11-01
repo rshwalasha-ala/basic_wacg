@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedienbarkeit</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/global2_v2.css">
+  
+  <link rel="stylesheet" href="./css/open_close_v5.css">
+  <link rel="stylesheet" href="./css/header_css.css">
+  <link rel="stylesheet" href="./css/footer_v3.css">
+  <link rel="stylesheet" href="./css/nav_final.css">
+      <style>
+ 
+  </style>
+  </head>
+<body>
+  <input type="checkbox" id="trigger" class="trigger">
+  <input type="checkbox" id="trigger1" class="trigger1">
+  <input type="checkbox" id="trigger2" class="trigger2">
+  <input type="checkbox" id="trigger3" class="trigger3">
+  <input type="checkbox" id="trigger4" class="trigger4">
+
+  <header id="header" class="clearfix">
+    <div id="search">
+        <div class="float-r">
+            <form action="#">
+                <label for="searchbar"></label>
+                <input name="searchbar" id="searchbar" placeholder="Suchbegriff...">
+                <button type="submit" class="search-button">
+                    suchen
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="float-l clearfix">
+        <a href="index.html" class="float-l" title="Zur Startseite">
+            <img src="./img/logo.png" alt="Zur Startseite" id="logo">
+        </a>
+        <h1 class="float-l">WCAG 2.0</h1>
+        
+    </div>
+    <h2 class="float-r">Grenzenloses Web<br/>für ALLE</h2>
+</header>
+    
+<nav id="hauptnavi">
+  <a href="#blubb" class="open" id="blubb">Navigation</a>
+  <a href="#" class="close">zuklappen</a>
+    <ul>
+      <li><a href="index.html" title="über diesen Link kommen Sie zurück zur Startseite">Startseite</a></li>
+      <li><a href="wahrnehmbarkeit.html" title="Aufbau der wichtigsten Elemente einer Seite">Wahrnehmbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="wahrnehmbarkeit.html#bilder" title="Regeln für die Einbindung von Bildmaterial">Bilder</a></li>
+          <li><a href="wahrnehmbarkeit.html#verweise" title="Regeln für den Aufbau von Verweisen">Verweise</a></li>
+          <li><a href="wahrnehmbarkeit.html#schrift" title="Regeln für den Einsatz von Typografie">Schrift</a></li>
+          <li><a href="wahrnehmbarkeit.html#betitelung" title="Regeln für den Dokumentaufbau">Betitelung</a></li>
+          <li><a href="wahrnehmbarkeit.html#farben" title="Regeln für den Einsatz von Farben">Farben</a></li>
+        </ul>
+      </li>
+      <li><a href="bedienbarkeit.html" title="Informationen zur Bedienbarkeit von Webseiten">Bedienbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="bedienbarkeit.html#hauptnavigation" title="Funktionen der Navigation auf einer Webseite">Hauptnavigation</a></li>
+          <li><a href="bedienbarkeit.html#seitenstruktur" title="Strukturaufbau einer Webseite">Seitenstruktur</a></li>
+          <li><a href="bedienbarkeit.html#formulare" title="Verständlichkeit von Formularen">Formulare</a></li>
+        </ul>
+      </li>
+      <li><a href="verstaendlichkeit.html" title="Vorhersehbarkeit der Website-Funktionalität">Verständlichkeit</a>
+        <ul class="hauptsub">
+          <li><a href="verstaendlichkeit.html#formatierung" title="Stringenz bei der Kennzeichnung von interaktiven Elementen">Formatierung</a></li>
+          <li><a href="verstaendlichkeit.html#datentabellen" title="Informationen zum Einsatz von Tabellen">Datentabellen</a></li>
+          <li><a href="verstaendlichkeit.html#labels" title="Kennzeichnung von Bedienelementen in Formularen">Labels</a></li>
+          <li><a href="verstaendlichkeit.html#markup" title="semantisch korrekter Einsatz von Markup">Markup</a></li>
+        </ul>
+      </li>
+      <li><a href="kompatibilitaet.html" title="Zugänglichkeit der Inhalte über verschiedene Techniken">Kompatibilität</a>
+        <ul class="hauptsub">
+          <li><a href="kompatibilitaet.html#validierung" title="Überprüfung auf valides Markup">Validierung</a></li>
+          <li><a href="kompatibilitaet.html#frames" title="Informationen zum Einsatz von Frames">Frames</a></li>
+          <li><a href="kompatibilitaet.html#plattformen" title="Zugänglichkeit von Inhalten unabhängig von Hard- und Software">Plattformen</a></li>
+        </ul>
+      </li>
+    </ul>
+</nav>
+
+  <div class="container">
+
+<div class="row">
+    <article id="hauptnavigation">
+     
+    <h2>Die Hauptnavigation</h2>
+<p>Wofür ist ine Navigation da? Klar, zum Navigieren – aber das ist nicht die ganze Wahrheit. Die Navigation einer Website hat folgende Funktionen:
+</p>
+<ul>
+    <li>einen Eindruck von Tiefe und Breite der Website geben</li>
+    <li>das Kernthema der Website vermitteln</li>
+    <li>Orientierung bieten, wo auf der Website sich ein Nutzer gerade befindet</li>
+    <li>implizite Anweisungen geben, was man als Nutzer als nächstes tun könnte.</li>
+</ul>
+<p>Abgesehen davon soll die Navigation Vertrauen schaffen: Weiß der Betreiber einer Website, wovon er spricht? Sind alle Themen enthalten, die man hier erwarten könnte? Macht er es mir einfach, sie zu finden? Oft müssen Sie eine Abwägung zwischen Konventionen und kreativem Ausdruck treffen. Ungewohnt positionierte Navigationen können einer Gestaltung zwar das gewisse Etwas geben, allerdings auch zu großer Verwirrung bei dem Nutzer führen.
+</p>
+<p>Auf die Navigation muss Verlass sein. Dazu gehört nicht nur, dass die Links auch funktionieren, sondern besonders, dass sich die Hauptnavigation auf jeder Seite an derselben Stelle befindet. Schließlich darf die Navigation nicht verwirren: Stellen Sie sicher, dass die Begriffe für Ihre Zielgruppe verständlich sind. 
+
+</p>
+<label for="trigger" aria-clickable="true">mehr&hellip;</label>
+</article>
+
+     
+<div class="container_1 show">
+  <dl>
+      <dt>aktueller Menüpunkt</dt>
+  <dd><strong>Der aktuell angewählte Menüpunkt sollte hervorgehoben werden. Ihre Nutzer sollten jederzeit sehen können, ob ein Link gerade aktiv ist oder nicht. Dies erreichen Sie am einfachsten in dem Sie dem aktiven Menüpunkt der Seite eine Klasse zuweisen.</strong> 
+      </dd>
+<dd> <code><li class="activeli"><a href="#" title="test">Testlink aktiv</a></li>
+    Obriges Beispiel wurde wie folgt mit CSS realisiert
+    .activeli{background:#ccc;}</code></dd>
+    </dl>
+    <dd> <code><li><a href="#" title="test2">Testlink 2</a></li>
+        </code></dd>
+        </dl>
+</div>
+</div>
+<div class="row">
+ <article id="strukturnav">
+      
+     <h2>Struktur der Navigation /Website</h2>
+     <p>Prinzipiell steht es Ihnen frei, beliebig viele Strukturebenen einzusetzen. Empfehlenswert sind jedoch möglichst flache Hierarchien . Zum einen helfen sie bei der Suchmaschinenoptimierung, weil Suchmaschinen nur ungern in tief verschachtelte Ebenen eintauchen. Zum anderen erleichtern sie Ihren Benutzern, zu den Inhalten zu navigieren – und sich zu merken, wo sie einen Inhalt gefunden haben.</p>
+     <p>Eine gute Faustregel ist, im Idealfall nicht mehr als drei Gliederungsebenen zu verwenden. Eine etwas grobe Richtlinie: Je leichter ein Klick fällt, desto mehr Navigationsebenen sind in Ordnung. Sie merken, dass die verschiedenen Usability-Faktoren miteinander verbunden sind: Wenn die Begriffe auf der zweiten Navigationsebene so kompliziert sind, dass Nutzer lange darüber nachdenken müssen, werden sie wohl kaum viele weitere Ebenen durchklicken. Umgekehrt können einfache Begriffe dabei helfen, viele Navigationsebenen abzumildern.</p>
+     
+     <label for="trigger1" aria-clickable="true">mehr&hellip;</label> 
+    </article> 
+     
+     <div class="container_2 show_1">
+      <dl>
+          <dt>Zustände bei Verweisen</dt>
+          <dd><strong>Sie können und sollten außerdem klar hervorheben, ob ein Link gerade mit der Maus überfahren wird oder ausgewählt ist.</strong> 
+            </dd>
+            <dd Testlink hover und Focus
+            <a href="#" title="test hover">Testlink hover und Focus</a>
+            Obriges Beispiel wurde wie folgt mit CSS realisiert
+            a{
+            display:block;
+            text-align:center;
+            color:#fc0;
+            }
+            a:hover,a:focus{color:#f00}
+            <p>Focus ist besonders für die Tastaturnutzer und Smartphones wichtig da dort kein hover möglich ist.
+            Um nicht interaktive Elemente mit einen Focus zu versehen muss am Element selbst das Attribut tabindex gesetzt werden. </p></dd>
+              </dl>
+            </div> 
+          </div>
+          <div class="row">
+     <article id="seitenstruktur">
+            
+            <h2>Seitenstruktur</h2>
+            <p>In der Praxis hat s ich herausgestellt, dass nicht jede Einzelseite einer Website die gleiche Funktion ausübt. Die Folge: An unterschiedliche Seitentypen werden verschiedene Anforderungen gesetzt, die sich auf Usability und Gestaltung auswirken. Als sinnvoll hat sich die folgende grobe Einteilung herausgestellt:</p>
+            <ul>
+                <li>
+                    <strong>Startseite:</strong> Die Entwicklung der Startseite dürfte die anspruchsvollste Aufgabe jeder Website sein. Hier soll die Zielgruppe angesprochen und überzeugt werden, auf die Unterseiten zu navigieren. Die Startseite soll daher die Hierarchie der Website aufzeigen und zugleich Lust auf die Inhalte machen.</li>
+                <li><strong>Kategorienseite:</strong> Kategorienseiten sind die eigentlichen Rubriken einer Website. Das können die Kategorien eines Blogs sein, die Produkttypen eines Onlineshops oder die Themen einer Nachrichtenseite.</li>
+                <li><strong>Detailseite:</strong> Detailseiten oder Artikelseiten enthalten die eigentlichen Inhalte einer Website. Das kann ein Artikel oder ein Produkt sein</li>
+            </ul>
+            <p>Am schwierigsten zu gestalten ist die Startseite. Da sie die meiste Aufmerksamkeit erhält, sind Kompromisse meist unvermeidlich – schließlich möchte jedes Thema hier gerne möglichst prominent präsentiert werden.</p>
+            <label for="trigger2" aria-clickable="true" class="open">mehr&hellip;</label> 
+          </article>
+                   
+               <div class="container_3 show_2">
+                  <dl>
+                    <dt>Tipps für die Startseite</dt>
+                      <dd><strong> Für die Angabe der Font-size in CSS greifen sie am besten zu Prozent, EM oder REM. Elemente deren Schriftgröße in EM und ggf. auch Breiten-, Höhen- und Abstandwerte in EM angegebenwurde, passen sich mit jeder Schriftgrößenänderung an.skalierbare Schrift .</strong></dd>
+                    <dd><img src="./img/scale_typo.png" alt="Schriftgröße" width="200" class="img_1"></dd>
+                      <dd><strong>Die Maßeinheit Pixel verhält sich absolut auch wenn Sie relativ zur Bildschirmauflösung dargestellt wird.</strong> </dd>
+                        </dl>
+                      </div>  
+                      </div>  
+                      <div class="row">
+                      <article id="betitelung">
+                        
+                        <h2>Jedes Dokument erhält einen individuellen Seitentitel</h2>
+                       <p> Warum? Dokumenttitel sind aus verschiedenen Gründen wichtig: Oftmals werden sie von Hilfsmitteln als Erstes beim Laden einer Seite wiedergegeben, sie werden in der Browsertitelleiste angezeigt, in Favoriten und beim Druck eines Dokumentes. Beschreibende Dokumenttitel sind hilfreich für jeden. Sie sind ebenso für Suchmaschinenlistings wichtig.</p>
+                        <p>Es gibt keine klar definierten Regeln, welche Zeichen als Trennzeichen in Titels verwendet werden sollten. Trotzdem sollten Dokumenttitel auf keinen Fall Zeichen beinhalten, die dekorativen Zwecken dienen, zum Beispiel „:: Titel ::“ oder „…== Titel ==…“. Jedes Interpunktionszeichen könnte vom Screenreader laut vorgelesen werden, was das Lesen der Titel sehr nervtötend macht.</p>
+                        <label for="trigger3" aria-clickable="true">mehr&hellip;</label>
+                      </article>
+                    
+                      <div class="container_5 show_3">
+                        <dl>
+                          <dt>Dokumenttitel</dt>
+                            <dd><strong>Prüfen Sie, dass jedes Dokument einen eindeutigen und beschreibenden Titel hat, der keine übermäßige Zeichensetzung beinhaltet. </strong> </dd>
+                              </dl>
+                            </div>   
+                            </div>  
+                            <div class="row">
+                <article id="farben">
+                        
+                        <h2>Achten Sie auf Farbkontraste</h2>
+                        <p>Warum? Wenn der Unterschied von Farbton und Helligkeit zwischen Vorder- und Hintergrundfarben nicht groß genug ist, können viele Besucher den Text nur schwer lesen. Dies kann an Farbfehlsichtigkeit oder einem Monochrom- oder Graustufenbildschirm liegen. Oder sie haben, wie ich, ein perfektes Sehvermögen, einen wirklich guten Monitor, der 24-bit Farben darstellt, und trotzdem Probleme, da die Seite einen hellgrauen Text auf weißem Hintergrund benutzt.</p>
+                        <p>Ein einfacher Weg, zu testen, ob der Unterschied von Farbton und Helligkeit zwischen Vorder- und Hintergrund groß genug ist sind Farb Kontrast Testtools wie<a href="#" id="orange"> Jonathan Snooks Color Contrast Checker oder Lea Verou - Contrast Ratio Test.</a>  Entweder geben Sie den Hexidezimalwert für Vorder- und Hintergrundfarbe ein oder schieben die Regler, um eine direkte Rückmeldung über Kontrast und Farbdifferenz zu bekommen.</p>
+                      <p>Sie können auch Ihren Monitor auf Graustufen oder monochrom umstellen, um sicherzustellen, dass der Text immer lesbar ist</p> 
+                    <p>Solten Sie dennoch mit ungünstigen Kontrastverhältnissen arbeiten müssen, kann es Helfen Text zu vergrößern oder mehr Freifläche zu dem kritischen Inhalt selbst zu schaffen.<strong>Beachten Sie die Grundregeln der Farblehre und psychologische Wirkung von Farben.</strong> </p>  
+                    <label for="trigger4" aria-clickable="true">mehr&hellip;</label> 
+                  </article>
+           
+                    <div class="container_4 show_4">
+                      <dl>
+                        <dt>Farbschema testen</dt>
+                          <dd><strong>Probleme die bei Farbsehschwächen auftreten können Sie am einfachsten durch einenGraustufenkonvertierung simulieren.</strong></dd>
+                        <dd><img src="./img/color-grayscale.jpg" alt="Graustufen" width="200" class="img_2"> </dd>
+                          <dd>Wenn sie sich unsicher sind ob die optischen Kontraste ausreichen verwenden Sie Tools um die Kontrastwerte zu prüfen.</dd> 
+                       <dd><img src="./img/site-grayscale.jpg" alt=" Beispiel Graustufen " width="200" class="img_3"> </dd>
+                        </dl>
+                          </div>                
+           </div>
+                 </div>  
+                 <footer class="footer-wrap clear">
+                  <div class="footer-link">
+                      <ul>
+                      <li><a href="https://www.einfach-fuer-alle.de" title="Einfach für Alle" target="on_blank">Einfach für Alle</a></li>
+                      <li><a href="https://www.barrierefreies-webdesign.de" title="Barrierefreies Webdesign" target="on_blank">Barrierefreies Webdesign</a></li>
+                      <li><a href="https://www.w3.org" title="W3.org" target="on_blank">W3.org</a></li>
+                      <li><a href="https://www.bundesfachstelle-barrierefreiheit.de" title="Bundesfachstelle Barrierefreiheit" target="on_blank">Bundesfachstelle</a></li>
+                      <li><a href="https://www.european-accessibility-act.de/" title="European Accessibility Act" target="on_blank">EAA</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="footer-end">
+                      <a href="impressum.html">Impressum | </a>
+                      <a href ="formular_projektv3.html">Kontakt</a>
+              
+                  </div>
+              
+              
+              
+              </footer>
+                                
+              </body>
+              </html>

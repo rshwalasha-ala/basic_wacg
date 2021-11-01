@@ -1,0 +1,64 @@
+/*Wrapper*/
+.header-wrap{
+
+}
+.main-nav-wrap{
+
+}
+.content-wrap{
+
+}
+.footer-wrap{
+
+}
+
+
+
+/*Spalten*/
+.col-2_6,.col-33{width:32.3333%;}
+.col-4_6,.col-66{width:65.6666667%;}
+   
+.col-50 , .col-3_6{width:50%;}
+ 
+.col-40{width:40%;}
+.col-60{width:60%;}
+    
+.col-25 {width:25%;}
+.col-75{width:75%;
+}
+
+/* margin und padding */
+.pad-1{padding-left:1%;padding-right:1%;}
+.mar-1{margin-left:1%;margin-right:1%;}
+
+
+/*float */
+.float-l,.fl-l {float:left;}
+.float-r,.fl-r{float:right;}
+
+/*Flex*/
+.flex,.flex-w{display:flex;}
+/*Flex mit Wrap*/  
+.flex-w{flex-wrap:wrap;}
+
+/*Zentrieren*/
+/*Text*/
+.text-center{text-align: center;}
+/* horizontal zentrieren */
+.horizontal{margin-left:auto;margin-right:auto;}
+
+/* clearen */
+.clear{
+    clear:both;
+}
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+  /*spezifische Selektoren*/
+article section{
+    border-left: 3px solid #f2f2f2;
+    padding-left:10px;
+}

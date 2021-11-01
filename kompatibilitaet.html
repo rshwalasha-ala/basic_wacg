@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kompatibilität</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/global2_v2.css">
+  
+  <link rel="stylesheet" href="./css/open_close_v5.css">
+  <link rel="stylesheet" href="./css/header_css.css">
+  <link rel="stylesheet" href="./css/footer_v3.css">
+  <link rel="stylesheet" href="./css/nav_final.css">
+      <style>
+ 
+  </style>
+  </head>
+<body>
+  <input type="checkbox" id="trigger" class="trigger">
+  <input type="checkbox" id="trigger1" class="trigger1">
+  <input type="checkbox" id="trigger2" class="trigger2">
+  <input type="checkbox" id="trigger3" class="trigger3">
+  <input type="checkbox" id="trigger4" class="trigger4">
+
+  <header id="header" class="clearfix">
+    <div id="search">
+        <div class="float-r">
+            <form action="#">
+                <label for="searchbar"></label>
+                <input name="searchbar" id="searchbar" placeholder="Suchbegriff...">
+                <button type="submit" class="search-button">
+                    suchen
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="float-l clearfix">
+        <a href="index.html" class="float-l" title="Zur Startseite">
+            <img src="./img/logo.png" alt="Zur Startseite" id="logo">
+        </a>
+        <h1 class="float-l">WCAG 2.0</h1>
+        
+    </div>
+    <h2 class="float-r">Grenzenloses Web<br/>für ALLE</h2>
+</header>
+    
+<nav id="hauptnavi">
+  <a href="#blubb" class="open" id="blubb">Navigation</a>
+  <a href="#" class="close">zuklappen</a>
+    <ul>
+      <li><a href="index.html" title="über diesen Link kommen Sie zurück zur Startseite">Startseite</a></li>
+      <li><a href="wahrnehmbarkeit.html" title="Aufbau der wichtigsten Elemente einer Seite">Wahrnehmbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="wahrnehmbarkeit.html#bilder" title="Regeln für die Einbindung von Bildmaterial">Bilder</a></li>
+          <li><a href="wahrnehmbarkeit.html#verweise" title="Regeln für den Aufbau von Verweisen">Verweise</a></li>
+          <li><a href="wahrnehmbarkeit.html#schrift" title="Regeln für den Einsatz von Typografie">Schrift</a></li>
+          <li><a href="wahrnehmbarkeit.html#betitelung" title="Regeln für den Dokumentaufbau">Betitelung</a></li>
+          <li><a href="wahrnehmbarkeit.html#farben" title="Regeln für den Einsatz von Farben">Farben</a></li>
+        </ul>
+      </li>
+      <li><a href="bedienbarkeit.html" title="Informationen zur Bedienbarkeit von Webseiten">Bedienbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="bedienbarkeit.html#hauptnavigation" title="Funktionen der Navigation auf einer Webseite">Hauptnavigation</a></li>
+          <li><a href="bedienbarkeit.html#seitenstruktur" title="Strukturaufbau einer Webseite">Seitenstruktur</a></li>
+          <li><a href="bedienbarkeit.html#formulare" title="Verständlichkeit von Formularen">Formulare</a></li>
+        </ul>
+      </li>
+      <li><a href="verstaendlichkeit.html" title="Vorhersehbarkeit der Website-Funktionalität">Verständlichkeit</a>
+        <ul class="hauptsub">
+          <li><a href="verstaendlichkeit.html#formatierung" title="Stringenz bei der Kennzeichnung von interaktiven Elementen">Formatierung</a></li>
+          <li><a href="verstaendlichkeit.html#datentabellen" title="Informationen zum Einsatz von Tabellen">Datentabellen</a></li>
+          <li><a href="verstaendlichkeit.html#labels" title="Kennzeichnung von Bedienelementen in Formularen">Labels</a></li>
+          <li><a href="verstaendlichkeit.html#markup" title="semantisch korrekter Einsatz von Markup">Markup</a></li>
+        </ul>
+      </li>
+      <li><a href="kompatibilitaet.html" title="Zugänglichkeit der Inhalte über verschiedene Techniken">Kompatibilität</a>
+        <ul class="hauptsub">
+          <li><a href="kompatibilitaet.html#validierung" title="Überprüfung auf valides Markup">Validierung</a></li>
+          <li><a href="kompatibilitaet.html#frames" title="Informationen zum Einsatz von Frames">Frames</a></li>
+          <li><a href="kompatibilitaet.html#plattformen" title="Zugänglichkeit von Inhalten unabhängig von Hard- und Software">Plattformen</a></li>
+        </ul>
+      </li>
+    </ul>
+</nav>
+
+  <div class="container">
+
+<div class="row">
+    <article id="validierung">
+     
+    <h2>Browser- und Gerätekompatibilität</h2>
+<p>Funktionieren der Inhaltszugänglichkeit mit den gängigsten Browsern und speziellen Hilfsmitteln für behinderte Personen.
+    validieren Sie HTML und CSS
+</p>
+<p>Warum? Weil valides Markup wichtig ist, um eine Unabhängigkeit der Hilfmittel sicherzustellen, eine der fundamentalen Säulen des Webs. Valides Markup zu verwenden erhöht die Möglichkeit, Informationen korrekt von allen Geräten interpretieren zu können.
+</p>
+<p>Seien Sie sich bewusst, dass Validität nicht Zugänglichkeit bedeutet. Ich habe viele Seiten gesehen, die valides HTML verwenden aber trotzdem weit entfernt von Zugänglichkeit sind. Dieses Szenario ist teilweise auf Seiten vertreten, die auf Content Management Systemen basieren, deren Entwickler die Verwendung von Webstandards missverstanden haben.
+
+</p>
+<label for="trigger" aria-clickable="true">mehr&hellip;</label>
+</article>
+
+     
+<div class="container_1 show">
+  <dl>
+      <dt>Validatoren des W3C</dt>
+  <dd><strong>Benutzen Sie die Validatoren des W3C, um zu überprüfen, ob HTML und CSS valide sind. Die Erweiterung Web Developer Toolbar ist dafür sehr praktisch: Tools - Validate CSS und Tools - Validate HTML.</strong> 
+      </dd>
+<dd><a href="https://validator.w3.org/" style="text-decoration: underline;">W3C Markup validation service</a><br>
+    <a href="https://jigsaw.w3.org/css-validator/" style="text-decoration: underline;">W3C CSS validator</a></dd>
+    </dl>
+</div>
+</div>
+<div class="row">
+ <article id="frames">
+      
+     <h2>Nutzen Sie keine Frames</h2>
+     <p>Warum? Obwohl Frames (und Iframes) nicht zwangsläufig unzugänglich sein müssen, verschlechtern sie generell Zugänglichkeit und Benutzbarkeit einer Seite. Frames sind außerdem ein Anzeichen dafür, dass die Seite von einem Entwickler erstellt wurde, der wenig Wissen über Zugänglichkeit und Benutzbarkeit hat.</p>
+     
+     <!--<label for="trigger1" aria-clickable="true">mehr&hellip;</label> -->
+    </article> 
+     
+     <div class="container_2 show_1">
+      <dl>
+          <dt>Das Title-Attribut</dt>
+          <dd><strong>Das Universalattribut TITLE ermöglicht es, an fast jedem Element erweiterte Beschreibungen zu hinterlegen. Tags wie &lt;a> und &lt;abbr> bekommen immer das Titleattribut.</strong> 
+            </dd>
+            <dd id="abbr">&lt;abbr title="Search Engine Optimizing">SEO&lt;/abbr&gt;</dd>
+           <dd><strong>Bei einigen Formularelementen wie LABEL und INPUT kann das Title-Attribut zum besseren Benutzbarkeit beitragen.</strong></dd>
+              </dl>
+            </div> 
+          </div>
+          <div class="row">
+     <article id="plattformen">
+            
+            <h2>Betreiben Sie keine Plattformausgrenzung!</h2>
+            <p>Warum? Weil eine der fundamentalen Eigenschaften des Webs die Unabhängigkeit von benutzter Hard- und Software sein sollte. Ebenso sollten Sie an die Zielgruppe Ihrer Webseite denken und somit ggf. auch an die Funktionstüchtigkeit in alten Browsern.
+              Testen Sie mit verschiedenen Browsern,Betriebssystemen und Geräten</p>
+            <p>Mit Plattformausgrenzung meine ich teilweises oder volles Ausperren von Benutzern, die wenig verbreitete Betriebssysteme oder Webbrowser verwenden. Wenn Sie Firefox oder Chrome benutzen , können Sie die Erweiterung User Agent Switcher installieren, eine Liste aller Useragents herunterladen und mit diesen testen.</p>
+            <p>Ich argumentiere oft, dass Webzugänglichkeit ein viel breiteres Spektrum umfasst als behinderte Menschen zu bedienen. Plattformausgrenzung ist ein hervorragendes Beispiel dafür und der einzige wichtige Faktor für mich, wie wichtig es ist, überhaupt zugänglich zu sein.</p>
+            <label for="trigger2" aria-clickable="true" class="open">mehr&hellip;</label> 
+          </article>
+                   
+               <div class="container_3 show_2">
+                  <dl>
+                    <dt>Hilfreiche Links</dt>
+                      <dd><strong> Folgende Links führen zu ADD-ONs, Programmen oder diversen Testseiten.</strong>
+                      <a href="http://nvda.bhvd.de/" style="text-decoration: underline;">Screenreader NVDA</a>
+                      <a href="https://www.ipd-hannover.de/ipd/screenreader-jaws.php" style="text-decoration: underline;">Screenreader Jaws</a>
+                      <a href="http://browsershots.org/" style="text-decoration: underline;">Browsershots</a>
+                      <a href="https://www.browseemall.com/" style="text-decoration: underline;">Browseemall</a>
+                      </dd>
+                    <dd><img src="./img/access-illus.jpg" alt="Schriftgröße" width="200" class="img_1"></dd>
+                      <dd></dd>
+                        </dl>
+                      </div>  
+                      </div>  
+                               
+           </div>
+                 </div>  
+                 <footer class="footer-wrap clear">
+                  <div class="footer-link">
+                      <ul>
+                      <li><a href="https://www.einfach-fuer-alle.de" title="Einfach für Alle" target="on_blank">Einfach für Alle</a></li>
+                      <li><a href="https://www.barrierefreies-webdesign.de" title="Barrierefreies Webdesign" target="on_blank">Barrierefreies Webdesign</a></li>
+                      <li><a href="https://www.w3.org" title="W3.org" target="on_blank">W3.org</a></li>
+                      <li><a href="https://www.bundesfachstelle-barrierefreiheit.de" title="Bundesfachstelle Barrierefreiheit" target="on_blank">Bundesfachstelle</a></li>
+                      <li><a href="https://www.european-accessibility-act.de/" title="European Accessibility Act" target="on_blank">EAA</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="footer-end">
+                      <a href="impressum.html">Impressum | </a>
+                      <a href ="formular_projektv3.html">Kontakt</a>
+              
+                  </div>
+              
+              
+              
+              </footer>
+                                
+              </body>
+              </html>

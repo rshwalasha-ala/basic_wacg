@@ -1,0 +1,198 @@
+ /* //////////////////// */
+/* Einbindung des Font: */
+
+*{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* ///////////////////////////////////////// */
+/* grundsätzliches Aussehen der Navi-Liste: */
+
+#hauptnavi{
+  margin:0;
+  padding:0;
+  background-color:#ce7000;
+  position:sticky;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 1;
+}
+
+#hauptnavi ul{
+  display:flex;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+
+#hauptnavi li{
+  padding: 0 0.25px;
+}
+
+#hauptnavi li a{    
+  display:block;
+  color:white;
+  padding:0.75rem 1.5rem;
+  text-decoration:none;
+}
+
+ /* ////////////////////////////// */
+/* Submenu unter Hauptnavi stellen */
+.hauptsub{
+  flex-direction:column;
+}
+
+ /* /////////////////////// */
+/* Submenu verstecken*/
+.hauptsub{
+  position:absolute;
+  left:-9999em;
+}
+
+ /* /////////////////////// */
+/* Submenu einblenden*/
+#hauptnavi li:hover > ul, #hauptnavi li:focus-within > ul{
+  left:auto;
+}
+
+ /* ///////////////////////// */
+/* Optik und Zugänglichkeit: */
+
+#hauptnavi a{
+  color: #fff;
+  background:#ce7000;
+}
+
+ /* /////////////////////////////// */
+/* Abstände für vertikale Anordnung*/
+#hauptnavi .hauptsub{
+  padding-right:0;
+  min-width:12em;
+  margin-left:1.5em;
+  /* abstände vertikal */
+  padding-top:2px;
+}
+
+ /* //////////////////////// */
+/* interaktives Verhalten: */
+
+#hauptnavi li a:hover, #hauptnavi li a:focus, #hauptnavi li a:focus-within{
+  background:#dcd2c8;
+  color:#2f2f2f;
+  font-weight:bold;
+}
+
+ /* ///////////////////////////////////////////// */
+/* Hamburger-Menü - Funktionalität und Aussehen: */
+
+#blubb{
+  position:relative;
+  padding:0.75rem 1.5rem;
+  text-decoration:none;
+}
+
+#hauptnavi .open::before {
+  content: "";
+  border: 7px solid transparent;
+  border-top-color: inherit;
+  border-bottom: none;
+  display: table;
+  position: absolute;
+  left: 7em;
+  top: 1.25em;
+}
+
+#hauptnavi .close{
+  position:relative;
+  padding:0.75rem 1.5rem;
+  text-decoration:none;
+}
+
+#hauptnavi .close::before{
+  content:"";
+  -webkit-transform:rotate(360deg);
+  border-style: solid;
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  left: 7em;
+  top: 1.25em;
+}
+
+ /* ///////////////////////////////////////////// */
+/* Hamburger-Menü media query: */
+
+#hauptnavi .open,.close{display:none;}
+  @media screen and (max-width:50em) {
+    
+    body{
+      padding-top:50px;
+    }
+
+    #hauptnavi .open{
+      display:block;
+      margin:0;
+    }
+    
+    #hauptnavi > ul{
+      display:none;
+    }
+    #hauptnavi li ul{
+      position:static;
+    }
+    #hauptnavi .open:target ~ ul{
+      display:block;
+    }
+
+    #hauptnavi .open:target{
+      display:none;
+    }
+    #hauptnavi .open:target ~ .close{
+      display:block;
+      margin:0;
+    }
+
+    #hauptnavi{
+      background: none;
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+    }
+
+    #hauptnavi li{
+      float:none;
+      max-width:12em;
+      margin-top: 0.2em;
+      margin-left:1.5em;
+      border-top:3px solid #2f2f2f;
+    }
+
+    #hauptnavi li a{
+      padding:0.3rem 0.6rem;
+      margin-bottom:0.2em;
+    }
+
+    #hauptnavi li a li{
+      margin-bottom:0.2em;
+    }
+
+    #hauptnavi li ul li a{
+      padding:0.2rem 0.6rem;
+      margin-top:0;
+      margin-bottom:0.1em;
+      border-top:none;
+    }
+
+    #hauptnavi ul li ul li{
+      min-width:11em;
+      border-top:none;
+      margin-top:-2px;
+    }
+
+    .hauptsub li{
+      margin-bottom:2px;
+    }
+
+  }

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktformular</title>
+  <link rel="stylesheet" href="css/global2_v2.css">
+  <link rel="stylesheet" href="css/nav_final.css">
+  <link rel="stylesheet" href="css/footer_v3.css">
+  <style>
+
+    h1{
+      color:#d77500;
+    }
+ 
+   
+    div{
+      padding:1em;   
+    }
+
+    label{
+      min-width:100px;
+      display:inline-block;
+    }
+
+    input,select,textarea{
+      width:50%;
+      border:1px solid transparent;
+    }
+
+    fieldset{
+      background: #f6f6f6;
+      border:0;
+    }
+
+  
+
+    input:hover,select:hover,textarea:hover{
+      border:1px solid #d77500;
+    }
+    input:focus,select:focus,textarea:focus{
+      border:1px solid #d77500;
+    }
+
+    [type="submit"],button{
+      border:none;
+      background:none;
+      background: #d77500;
+    }
+
+
+    .required label:after{
+      content:" " "*";
+      color:#d77500;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="hauptnavi">
+    <a href="#blubb" class="open" id="blubb">Navigation</a>
+    <a href="#" class="close">zuklappen</a>
+      <ul>
+        <li><a href="index.html" title="über diesen Link kommen Sie zurück zur Startseite">Startseite</a></li>
+        <li><a href="wahrnehmbarkeit.html" title="Aufbau der wichtigsten Elemente einer Seite">Wahrnehmbarkeit</a>
+          <ul class="hauptsub">
+            <li><a href="wahrnehmbarkeit.html#bilder" title="Regeln für die Einbindung von Bildmaterial">Bilder</a></li>
+            <li><a href="wahrnehmbarkeit.html#verweise" title="Regeln für den Aufbau von Verweisen">Verweise</a></li>
+            <li><a href="wahrnehmbarkeit.html#schrift" title="Regeln für den Einsatz von Typografie">Schrift</a></li>
+            <li><a href="wahrnehmbarkeit.html#betitelung" title="Regeln für den Dokumentaufbau">Betitelung</a></li>
+            <li><a href="wahrnehmbarkeit.html#farben" title="Regeln für den Einsatz von Farben">Farben</a></li>
+          </ul>
+        </li>
+        <li><a href="bedienbarkeit.html" title="Informationen zur Bedienbarkeit von Webseiten">Bedienbarkeit</a>
+          <ul class="hauptsub">
+            <li><a href="bedienbarkeit.html#hauptnavigation" title="Funktionen der Navigation auf einer Webseite">Hauptnavigation</a></li>
+            <li><a href="bedienbarkeit.html#seitenstruktur" title="Strukturaufbau einer Webseite">Seitenstruktur</a></li>
+            <li><a href="bedienbarkeit.html#formulare" title="Verständlichkeit von Formularen">Formulare</a></li>
+          </ul>
+        </li>
+        <li><a href="verstaendlichkeit.html" title="Vorhersehbarkeit der Website-Funktionalität">Verständlichkeit</a>
+          <ul class="hauptsub">
+            <li><a href="verstaendlichkeit.html#formatierung" title="Stringenz bei der Kennzeichnung von interaktiven Elementen">Formatierung</a></li>
+            <li><a href="verstaendlichkeit.html#datentabellen" title="Informationen zum Einsatz von Tabellen">Datentabellen</a></li>
+            <li><a href="verstaendlichkeit.html#labels" title="Kennzeichnung von Bedienelementen in Formularen">Labels</a></li>
+            <li><a href="verstaendlichkeit.html#markup" title="semantisch korrekter Einsatz von Markup">Markup</a></li>
+          </ul>
+        </li>
+        <li><a href="kompatibilitaet.html" title="Zugänglichkeit der Inhalte über verschiedene Techniken">Kompatibilität</a>
+          <ul class="hauptsub">
+            <li><a href="kompatibilitaet.html#validierung" title="Überprüfung auf valides Markup">Validierung</a></li>
+            <li><a href="kompatibilitaet.html#frames" title="Informationen zum Einsatz von Frames">Frames</a></li>
+            <li><a href="kompatibilitaet.html#plattformen" title="Zugänglichkeit von Inhalten unabhängig von Hard- und Software">Plattformen</a></li>
+          </ul>
+        </li>
+      </ul>
+  </nav>
+
+  <h1>KONTAKT</h1>
+
+  <form>
+    <fieldset>
+  
+      <div>
+        <label for="vorname">Vorname</label>
+        <input name="vorname" value="" id="vorname" size="25">
+      </div>
+
+      <div>
+        <label for="nachname">Nachname</label>
+        <input name="nachname" id="nachname">
+      </div>
+
+
+
+    <div class="required">
+      <label for="email">E-Mail</label>
+      <input type="email" name="email" id="email" required placeholder="Ihre E-Mail">
+      
+    </div>
+
+
+
+    <div>
+       <label for="tel">Tel</label>
+       <input type="tel" id="tel" name="tel">
+
+    </div>
+
+    <div>
+        <p id="label">Sie haben ein Anliegen? Schreiben Sie uns</p>
+        <textarea name="kommentar" cols="25" rows="5"></textarea>
+<br>
+        <p>Die Datenschutzbestimmungen habe ich zur Kenntnis genommen.</p>
+      
+
+    </div>
+
+
+   
+
+ 
+
+</fieldset>
+ 
+  
+   <input type="submit" value="absenden">
+  </form>
+
+  <p>www.buderus.de Kontaktformular hat uns ganz gut gefallen oder auch gab-marburg.de/ An Beispielen aus der Praxis orientieren!</p>
+
+  <footer class="footer-wrap">
+    <div class="footer-link">
+        <ul>
+        <li><a href="https://www.einfach-fuer-alle.de" target="on_blank">Einfach für Alle</a></li>
+        <li><a href="https://www.barrierefreies-webdesign.de" target="on_blank">Barrierefreies Webdesign</a></li>
+        <li><a href="https://www.w3.org" target="on_blank">W3.org</a></li>
+        <li><a href="https://www.bundesfachstelle-barrierefreiheit.de" target="on_blank">Bundesfachstelle</a></li>
+        <li><a href="https://www.european-accessibility-act.de/" target="on_blank">EAA</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-end">
+        <a href="impressum.html">Impressum | </a>
+        <a href ="formular_projektv3.html">Kontakt</a>
+
+    </div>
+
+
+
+</footer>
+  
+  
+</body>
+</html>

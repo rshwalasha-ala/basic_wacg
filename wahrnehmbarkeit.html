@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahrnehmbarkeit</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/global2_v2.css">
+  
+  <link rel="stylesheet" href="./css/open_close_v5.css">
+  <link rel="stylesheet" href="./css/header_css.css">
+  <link rel="stylesheet" href="./css/footer_v3.css">
+  <link rel="stylesheet" href="./css/nav_final.css">
+      <style>
+ 
+  </style>
+  </head>
+<body>
+  <input type="checkbox" id="trigger" class="trigger">
+  <input type="checkbox" id="trigger1" class="trigger1">
+  <input type="checkbox" id="trigger2" class="trigger2">
+  <input type="checkbox" id="trigger3" class="trigger3">
+  <input type="checkbox" id="trigger4" class="trigger4">
+
+  <header id="header" class="clearfix">
+    <div id="search">
+        <div class="float-r">
+            <form action="#">
+                <label for="searchbar"></label>
+                <input name="searchbar" id="searchbar" placeholder="Suchbegriff...">
+                <button type="submit" class="search-button">
+                    suchen
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="float-l clearfix">
+        <a href="index.html" class="float-l" title="Zur Startseite">
+            <img src="./img/logo.png" alt="Zur Startseite" id="logo">
+        </a>
+        <h1 class="float-l">WCAG 2.0</h1>
+        
+    </div>
+    <h2 class="float-r">Grenzenloses Web<br/>für ALLE</h2>
+</header>
+    
+<nav id="hauptnavi">
+  <a href="#blubb" class="open" id="blubb">Navigation</a>
+  <a href="#" class="close">zuklappen</a>
+    <ul>
+      <li><a href="index.html" title="über diesen Link kommen Sie zurück zur Startseite">Startseite</a></li>
+      <li><a href="wahrnehmbarkeit.html" title="Aufbau der wichtigsten Elemente einer Seite">Wahrnehmbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="wahrnehmbarkeit.html#bilder" title="Regeln für die Einbindung von Bildmaterial">Bilder</a></li>
+          <li><a href="wahrnehmbarkeit.html#verweise" title="Regeln für den Aufbau von Verweisen">Verweise</a></li>
+          <li><a href="wahrnehmbarkeit.html#schrift" title="Regeln für den Einsatz von Typografie">Schrift</a></li>
+          <li><a href="wahrnehmbarkeit.html#betitelung" title="Regeln für den Dokumentaufbau">Betitelung</a></li>
+          <li><a href="wahrnehmbarkeit.html#farben" title="Regeln für den Einsatz von Farben">Farben</a></li>
+        </ul>
+      </li>
+      <li><a href="bedienbarkeit.html" title="Informationen zur Bedienbarkeit von Webseiten">Bedienbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="bedienbarkeit.html#hauptnavigation" title="Funktionen der Navigation auf einer Webseite">Hauptnavigation</a></li>
+          <li><a href="bedienbarkeit.html#seitenstruktur" title="Strukturaufbau einer Webseite">Seitenstruktur</a></li>
+          <li><a href="bedienbarkeit.html#formulare" title="Verständlichkeit von Formularen">Formulare</a></li>
+        </ul>
+      </li>
+      <li><a href="verstaendlichkeit.html" title="Vorhersehbarkeit der Website-Funktionalität">Verständlichkeit</a>
+        <ul class="hauptsub">
+          <li><a href="verstaendlichkeit.html#formatierung" title="Stringenz bei der Kennzeichnung von interaktiven Elementen">Formatierung</a></li>
+          <li><a href="verstaendlichkeit.html#datentabellen" title="Informationen zum Einsatz von Tabellen">Datentabellen</a></li>
+          <li><a href="verstaendlichkeit.html#labels" title="Kennzeichnung von Bedienelementen in Formularen">Labels</a></li>
+          <li><a href="verstaendlichkeit.html#markup" title="semantisch korrekter Einsatz von Markup">Markup</a></li>
+        </ul>
+      </li>
+      <li><a href="kompatibilitaet.html" title="Zugänglichkeit der Inhalte über verschiedene Techniken">Kompatibilität</a>
+        <ul class="hauptsub">
+          <li><a href="kompatibilitaet.html#validierung" title="Überprüfung auf valides Markup">Validierung</a></li>
+          <li><a href="kompatibilitaet.html#frames" title="Informationen zum Einsatz von Frames">Frames</a></li>
+          <li><a href="kompatibilitaet.html#plattformen" title="Zugänglichkeit von Inhalten unabhängig von Hard- und Software">Plattformen</a></li>
+        </ul>
+      </li>
+    </ul>
+</nav>
+
+  <div class="container">
+
+<div class="row">
+    <article id="bilder">
+     
+    <h2>Geben Sie Bildern immer alternativen Text</h2>
+<p>Warum? Wenn kein alternativer Text bereitgestellt wird oder falsch angegeben ist, wird jeder, der die Bilder nicht sehen kann, entweder die Information verpassen oder in sinnloser Information ertränkt.
+</p>
+<p>Oft wird das alt-Attribut missverstanden. Es dient dazu, aussagefähigen, informativen Text bereitzustellen, der als eine Alternative benutzt werden sollte, falls ein informationelles Bild oder ein anderes graphisches Objekt nicht angezeigt werden kann. Das alt-Attribut ist für img– oder area-Elemente vorgeschrieben.
+</p>
+<p>Informative Bilder sollten eine kurze Beschreibung des Bildes besitzen. Wenn Dekorative Bilder im Markup platziert werden müssen sollten Sie einen leeren alternativen Text besitzen. <strong>Dekorative Bilder sollten idealerweise via CSS eingebunden werden!</strong>
+
+</p>
+<label for="trigger" aria-clickable="true">mehr&hellip;</label>
+</article>
+
+     
+<div class="container_1 show">
+  <dl>
+      <dt>Fehlende alt Attribute finden</dt>
+  <dd><strong>Benutzen Sie die Web Developer Bar, um alternativen Text aller Bilder anzeigen zu lassen: Images - Replace Images With Alt Attributes. Alternativ binden sie folgende Regelsätze in einer CSS-DAtei zum Testen ein:</strong> 
+      </dd>
+<dd>/* Wenn ALT Attribut leer ist*/
+  img[alt=""] {border: 3px dotted red !important;}
+  /* wenn altattribut am bild nicht vorhanden */
+  img:not([alt]) {border: 5px solid red !important;}</dd>
+    </dl>
+</div>
+</div>
+<div class="row">
+ <article id="verweise">
+      
+     <h2>Verweise mit Titel-Attribut und aussagekräftigen Linktexten</h2>
+     <p>Warum? Links sind nützlicher, wenn sie beschreibend sind. Die meisten sehenden Menschen scannen Webseiten, um einen schnellen Überblick zu erhalten, und Links sind oft ein wichtiger Bestandteil dieses Inhaltes. Klare Links machen das Scannen schneller. Blinde und sehbehinderte Menschen können eine Seite nicht so scannen, Sie müssen stattdessen von Link zu Link springen oder eine Liste aller Links erzeugen lassen, daher hilft beschreibender Linktext. Beschreibende Links sind weiterhin wichtig für Suchmaschinen, so dass dieser Aspekt von Zugänglichkeit zu guter SEO gehört.</p>
+     <p>Links sollten sinnvoll sein, wenn sie ohne Kontext gelesen werden. „Klicken Sie hier“ oder „hier“ eignen sich nicht als gute Linktexte, da sie keinerlei Informationen über das Linkziel geben. Linktexte, die aus einem ganzen Absatz bestehen, wie man es oft auf Zeitungswebseiten sieht, enthalten zu viel Information und sollten vermieden werden.</p>
+     <p>Es gibt Ausnahmen. Linktexte wie „Lesen Sie mehr“ oder „Lesen Sie weiter“ können in Nachrichtenauflistungen oder ähnlichem in Ordnung sein, solange das Titelattribut benutzt wird, um Links zu unterscheiden.</p>
+     <label for="trigger1" aria-clickable="true">mehr&hellip;</label> 
+    </article> 
+     
+     <div class="container_2 show_1">
+      <dl>
+          <dt>Das Title-Attribut</dt>
+          <dd><strong>Das Universalattribut TITLE ermöglicht es, an fast jedem Element erweiterte Beschreibungen zu hinterlegen. Tags wie &lt;a> und &lt;abbr> bekommen immer das Titleattribut.</strong> 
+            </dd>
+            <dd id="abbr">&lt;abbr title="Search Engine Optimizing">SEO&lt;/abbr&gt;</dd>
+           <dd><strong>Bei einigen Formularelementen wie LABEL und INPUT kann das Title-Attribut zum besseren Benutzbarkeit beitragen.</strong></dd>
+              </dl>
+            </div> 
+          </div>
+          <div class="row">
+     <article id="schrift">
+            
+            <h2>Erhöhen Sie die Schriftgröße und verwenden Sie relative Maßeinheiten</h2>
+            <p>Warum? Weil viele Leute größeren Text benötigen oder wollen, um ihn komfortabel lesen zu können. Sie könnten sehbehindert sein, älter als 40 oder mögen es einfach, sich beim Surfen zurück zu lehnen.</p>
+            <p>Falls die Schriftgröße mit relativen Einheiten deklariert ist, funktioniert die Veränderung der Schriftgröße in allen Browsern. Falls die Schriftgröße in Pixeln festgelegt wurde, können Benutzer des Internet Explorer für Windows die Schriftgröße nicht ändern ohne vorher nicht die Einstellungen des Browsers zu verändern, was nur sehr wenige Personen tun.</p>
+            <p>Selbst wenn die Schriftgröße in einer relativen Einheit festgelegt wurde können immer noch Probleme beim Vergößern des Textes entstehen. Das Layout muss in die Betrachtung einbezogen werden, dass Benutzer die Textgröße um einige Nummern hochschrauben. Viele Layouts werden schnell unnutzbar, wenn die Schrift vergrößert wird. Offensichtlich bricht jedes Layout letztendlich, aber ein gutes Layout sollte in der Lage sein, zusammen zu halten, wenn der Text um einige hundert Prozent erhöht wird. Es muss nicht so gut aussehen wie mit normaler Textgröße, aber der Inhalt sollte nicht verschwinden oder unlesbar werden.</p>
+            <label for="trigger2" aria-clickable="true" class="open">mehr&hellip;</label> 
+          </article>
+                   
+               <div class="container_3 show_2">
+                  <dl>
+                    <dt>Relative Maßeinheiten</dt>
+                      <dd><strong> Für die Angabe der Font-size in CSS greifen sie am besten zu Prozent, EM oder REM. Elemente deren Schriftgröße in EM und ggf. auch Breiten-, Höhen- und Abstandwerte in EM angegebenwurde, passen sich mit jeder Schriftgrößenänderung an.skalierbare Schrift .</strong></dd>
+                    <dd><img src="./img/scale_typo.png" alt="Schriftgröße" width="200" class="img_1"></dd>
+                      <dd><strong>Die Maßeinheit Pixel verhält sich absolut auch wenn Sie relativ zur Bildschirmauflösung dargestellt wird.</strong> </dd>
+                        </dl>
+                      </div>  
+                      </div>  
+                      <div class="row">
+                      <article id="betitelung">
+                        
+                        <h2>Jedes Dokument erhält einen individuellen Seitentitel</h2>
+                       <p> Warum? Dokumenttitel sind aus verschiedenen Gründen wichtig: Oftmals werden sie von Hilfsmitteln als Erstes beim Laden einer Seite wiedergegeben, sie werden in der Browsertitelleiste angezeigt, in Favoriten und beim Druck eines Dokumentes. Beschreibende Dokumenttitel sind hilfreich für jeden. Sie sind ebenso für Suchmaschinenlistings wichtig.</p>
+                        <p>Es gibt keine klar definierten Regeln, welche Zeichen als Trennzeichen in Titels verwendet werden sollten. Trotzdem sollten Dokumenttitel auf keinen Fall Zeichen beinhalten, die dekorativen Zwecken dienen, zum Beispiel „:: Titel ::“ oder „…== Titel ==…“. Jedes Interpunktionszeichen könnte vom Screenreader laut vorgelesen werden, was das Lesen der Titel sehr nervtötend macht.</p>
+                        <label for="trigger3" aria-clickable="true">mehr&hellip;</label>
+                      </article>
+                    
+                      <div class="container_5 show_3">
+                        <dl>
+                          <dt>Dokumenttitel</dt>
+                            <dd><strong>Prüfen Sie, dass jedes Dokument einen eindeutigen und beschreibenden Titel hat, der keine übermäßige Zeichensetzung beinhaltet. </strong> </dd>
+                              </dl>
+                            </div>   
+                            </div>  
+                            <div class="row">
+                <article id="farben">
+                        
+                        <h2>Achten Sie auf Farbkontraste</h2>
+                        <p>Warum? Wenn der Unterschied von Farbton und Helligkeit zwischen Vorder- und Hintergrundfarben nicht groß genug ist, können viele Besucher den Text nur schwer lesen. Dies kann an Farbfehlsichtigkeit oder einem Monochrom- oder Graustufenbildschirm liegen. Oder sie haben, wie ich, ein perfektes Sehvermögen, einen wirklich guten Monitor, der 24-bit Farben darstellt, und trotzdem Probleme, da die Seite einen hellgrauen Text auf weißem Hintergrund benutzt.</p>
+                        <p>Ein einfacher Weg, zu testen, ob der Unterschied von Farbton und Helligkeit zwischen Vorder- und Hintergrund groß genug ist sind Farb Kontrast Testtools wie<a href="#" id="orange"> Jonathan Snooks Color Contrast Checker oder Lea Verou - Contrast Ratio Test.</a>  Entweder geben Sie den Hexidezimalwert für Vorder- und Hintergrundfarbe ein oder schieben die Regler, um eine direkte Rückmeldung über Kontrast und Farbdifferenz zu bekommen.</p>
+                      <p>Sie können auch Ihren Monitor auf Graustufen oder monochrom umstellen, um sicherzustellen, dass der Text immer lesbar ist</p> 
+                    <p>Solten Sie dennoch mit ungünstigen Kontrastverhältnissen arbeiten müssen, kann es Helfen Text zu vergrößern oder mehr Freifläche zu dem kritischen Inhalt selbst zu schaffen.<strong>Beachten Sie die Grundregeln der Farblehre und psychologische Wirkung von Farben.</strong> </p>  
+                    <label for="trigger4" aria-clickable="true">mehr&hellip;</label> 
+                  </article>
+           
+                    <div class="container_4 show_4">
+                      <dl>
+                        <dt>Farbschema testen</dt>
+                          <dd><strong>Probleme die bei Farbsehschwächen auftreten können Sie am einfachsten durch einenGraustufenkonvertierung simulieren.</strong></dd>
+                        <dd><img src="./img/color-grayscale.jpg" alt="Graustufen" width="200" class="img_2"> </dd>
+                          <dd>Wenn sie sich unsicher sind ob die optischen Kontraste ausreichen verwenden Sie Tools um die Kontrastwerte zu prüfen.</dd> 
+                       <dd><img src="./img/site-grayscale.jpg" alt=" Beispiel Graustufen " width="200" class="img_3"> </dd>
+                        </dl>
+                          </div>                
+           </div>
+                 </div>  
+                 <footer class="footer-wrap clear">
+                  <div class="footer-link">
+                      <ul>
+                      <li><a href="https://www.einfach-fuer-alle.de" title="Einfach für Alle" target="on_blank">Einfach für Alle</a></li>
+                      <li><a href="https://www.barrierefreies-webdesign.de" title="Barrierefreies Webdesign" target="on_blank">Barrierefreies Webdesign</a></li>
+                      <li><a href="https://www.w3.org" title="W3.org" target="on_blank">W3.org</a></li>
+                      <li><a href="https://www.bundesfachstelle-barrierefreiheit.de" title="Bundesfachstelle Barrierefreiheit" target="on_blank">Bundesfachstelle</a></li>
+                      <li><a href="https://www.european-accessibility-act.de/" title="European Accessibility Act" target="on_blank">EAA</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="footer-end">
+                      <a href="impressum.html">Impressum | </a>
+                      <a href ="formular_projektv3.html">Kontakt</a>
+              
+                  </div>
+              
+              
+              
+              </footer>
+                                
+              </body>
+              </html>

@@ -1,0 +1,67 @@
+*{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{color:#ce7000;
+}
+
+p{
+
+}
+
+a{text-decoration: none;
+  color:#ce7000;
+}
+  
+a:hover,a:focus{background:#dcd2c8;
+      
+}
+
+ul,ol{
+
+}
+
+ul li,ol li{
+  
+}
+
+input,select,textarea{
+
+}
+
+input:hover,select:hover,textarea:hover{
+
+}
+
+input:focus,select:focus,textarea:focus{
+
+}
+  
+[type="submit"],button{
+
+}
+
+.col-100{width: 100%;}
+
+.col-66{
+  width: 55%;
+  
+}
+.col-33{max-width: 25%;}
+
+.fl-l{float:left;}
+.fl-r{float: right;}
+
+.clear{clear:both;}
+
+.clearfix:after{
+  content:"";
+  display: table;
+  clear: both;
+
+}
+.content-wrap{
+  max-width: 1200px;
+}

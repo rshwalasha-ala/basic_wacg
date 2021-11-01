@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WCAG 2.0</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/global2_v2.css">
+  
+  <link rel="stylesheet" href="./css/open_close_v5.css">
+  <link rel="stylesheet" href="./css/header_css.css">
+  <link rel="stylesheet" href="./css/footer_v3.css">
+  <link rel="stylesheet" href="./css/nav_final.css">
+      <style>
+ 
+  </style>
+  </head>
+<body>
+  <input type="checkbox" id="trigger" class="trigger">
+  <input type="checkbox" id="trigger1" class="trigger1">
+  <input type="checkbox" id="trigger2" class="trigger2">
+  <input type="checkbox" id="trigger3" class="trigger3">
+  <input type="checkbox" id="trigger4" class="trigger4">
+
+  <header id="header" class="clearfix">
+    <div id="search">
+        <div class="float-r">
+            <form action="#">
+                <label for="searchbar"></label>
+                <input name="searchbar" id="searchbar" placeholder="Suchbegriff...">
+                <button type="submit" class="search-button">
+                    suchen
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="float-l clearfix">
+        <a href="index.html" class="float-l" title="Zur Startseite">
+            <img src="./img/logo.png" alt="Zur Startseite" id="logo">
+        </a>
+        <h1 class="float-l">WCAG 2.0</h1>
+        
+    </div>
+    <h2 class="float-r">Grenzenloses Web<br/>für ALLE</h2>
+</header>
+    
+<nav id="hauptnavi">
+  <a href="#blubb" class="open" id="blubb">Navigation</a>
+  <a href="#" class="close">zuklappen</a>
+    <ul>
+      <li><a href="index.html" title="über diesen Link kommen Sie zurück zur Startseite">Startseite</a></li>
+      <li><a href="wahrnehmbarkeit.html" title="Aufbau der wichtigsten Elemente einer Seite">Wahrnehmbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="wahrnehmbarkeit.html#bilder" title="Regeln für die Einbindung von Bildmaterial">Bilder</a></li>
+          <li><a href="wahrnehmbarkeit.html#verweise" title="Regeln für den Aufbau von Verweisen">Verweise</a></li>
+          <li><a href="wahrnehmbarkeit.html#schrift" title="Regeln für den Einsatz von Typografie">Schrift</a></li>
+          <li><a href="wahrnehmbarkeit.html#betitelung" title="Regeln für den Dokumentaufbau">Betitelung</a></li>
+          <li><a href="wahrnehmbarkeit.html#farben" title="Regeln für den Einsatz von Farben">Farben</a></li>
+        </ul>
+      </li>
+      <li><a href="bedienbarkeit.html" title="Informationen zur Bedienbarkeit von Webseiten">Bedienbarkeit</a>
+        <ul class="hauptsub">
+          <li><a href="bedienbarkeit.html#hauptnavigation" title="Funktionen der Navigation auf einer Webseite">Hauptnavigation</a></li>
+          <li><a href="bedienbarkeit.html#seitenstruktur" title="Strukturaufbau einer Webseite">Seitenstruktur</a></li>
+          <li><a href="bedienbarkeit.html#formulare" title="Verständlichkeit von Formularen">Formulare</a></li>
+        </ul>
+      </li>
+      <li><a href="verstaendlichkeit.html" title="Vorhersehbarkeit der Website-Funktionalität">Verständlichkeit</a>
+        <ul class="hauptsub">
+          <li><a href="verstaendlichkeit.html#formatierung" title="Stringenz bei der Kennzeichnung von interaktiven Elementen">Formatierung</a></li>
+          <li><a href="verstaendlichkeit.html#datentabellen" title="Informationen zum Einsatz von Tabellen">Datentabellen</a></li>
+          <li><a href="verstaendlichkeit.html#labels" title="Kennzeichnung von Bedienelementen in Formularen">Labels</a></li>
+          <li><a href="verstaendlichkeit.html#markup" title="semantisch korrekter Einsatz von Markup">Markup</a></li>
+        </ul>
+      </li>
+      <li><a href="kompatibilitaet.html" title="Zugänglichkeit der Inhalte über verschiedene Techniken">Kompatibilität</a>
+        <ul class="hauptsub">
+          <li><a href="kompatibilitaet.html#validierung" title="Überprüfung auf valides Markup">Validierung</a></li>
+          <li><a href="kompatibilitaet.html#frames" title="Informationen zum Einsatz von Frames">Frames</a></li>
+          <li><a href="kompatibilitaet.html#plattformen" title="Zugänglichkeit von Inhalten unabhängig von Hard- und Software">Plattformen</a></li>
+        </ul>
+      </li>
+    </ul>
+</nav>
+
+  <div class="container">
+
+<div class="row">
+    <article id="formatierung">
+     
+    <h2>Verständliche Farben und Funktionen für Interaktive Elemente</h2>
+    <p><strong>Warum?</strong> Der Nutzer versucht schnell ein Schema für normalen Text, hervorgehobenen (wichtigeren) Text und Inhalten mit denen er interagieren kann zu erkennen</p>
+
+    <p>Sorgen Sie für ein kontinuierliches Farbschema bei Verweisen und Formularen. Der Nutzer findet sich so schneller zurecht und ist eher bereit auch einem Link zu folgen.</p>
+    
+    <p>Nutzer erwarten wenn sich der Mouse-Cursor zur Hand ändert, dass sich dann auch ein Link dahinter befindet. Setzen SIe die CSS-Eigenschaft <i>cursor:pointer;</i> nur dann ein wenn Sie Elemente mit Javascript anklickbar funktionstüchtig gestaltet haben.</p>
+
+</p>
+<label for="trigger" aria-clickable="true">mehr&hellip;</label>
+</article>
+
+     
+<div class="container_1 show">
+  <dl>
+      <dt>Falsche Formatierung</dt>
+  <dd><a href="" style="font-weight:bold;">Na haben Sie den Link schon gefunden?</a></dd>
+  <dd id="abbr">&lt;span style="color:#1755C3;font-family:alegreya-sc;text-decoration:underline;cursor:pointer;"&gt;Na haben Sie den Link schon gefunden?<&lt;span&gt;</dd>
+<dd>Sie merken schon auf den bisherigen Seiten waren die Links innerhalb der Texte blau. In diesem Fall gibt es jedoch keinen Link. Verwirrend!</dd>
+    </dl>
+</div>
+</div>
+<div class="row">
+ <article id="datentabellen">
+      
+     <h2>Datentabellen im Frontend einer Webseite</h2>
+     <p><strong>Warum?</strong> Tabellen sollten nicht für Layoutzwecke verwendet werden und tabellarische Daten sollten richtig mit Tabellen ausgezeichnet werden, die verfügbare Elemente und Attribute zur Erhöhung der Zugänglichkeit benutzen.</p>
+     <p>Sie sollten den Gebrauch oder Missbrauch von Tabellen zu kontrollieren. Die Web Developer Erweiterung wird jetzt erneut nützlich. Benutzen Sie Outline - Outline Table Cells und Outline - Outline Tables, um alle Tabellen hervorzuheben. Falls die betrachtete Seite keine Tabellen beinhaltet, sollten Sie nichts sehen. Falls Teile der Seite, die keine tabellarischen Daten enthält, hervorgehoben wird, werden Tabellen für das Layout benutzt</p>
+     <p>Falls die Seite tatsächlich tabellarische Daten enthält, prüfen Sie, ob es als Tabelle ausgezeichnet ist und korrektes und zugängliches Markup verwendet. Verwenden Sie Tabellen nur wenn eine tabellarische Darstellung zum Verständniss des Inhalts notwendig ist!</p>
+     <label for="trigger1" aria-clickable="true">mehr&hellip;</label> 
+    </article> 
+     
+     <div class="container_2 show_1">
+      <dl>
+          <dt>Datentabellen in Backends</dt>
+          <dd><strong>   In Backends von Webseiten sind Tabellen beliebig einsetzbar. Bei Onlineshops sollte jedoch darauf geachtet werden das gerade im Warenkorbbereicheine saubere Struktur vorliegt damit Screenreader diesen korrekt ausgeben. Unter Umständen kann an dieser Stelle auch eine Liste geeigneter sein. Wenn Sie Tabellen einsetzen verwenden Sie die semantischen Gliederungselemente einer Tabelle</strong> 
+            </dd>
+            <dd id="abbr">&lt;thead&gt;
+                &lt;tbody&gt;
+                &lt;tfoot&gt;</dd>
+              </dl>
+            </div> 
+          </div>
+          <div class="row">
+     <article id="labels">
+            
+            <h2>Bedienelemente und Kennzeichnung von Formularen</h2>
+            <p><strong>Warum?</strong> Richtige Labels helfen jedem, da sie den anwählbare Bereich vergrößern. Jedes sichtbare Formularfeld sollte deutlich mit einem Lebelelement verknüpft sein.</p>
+            <p>Tastaturbenutzer haben große Probleme, wenn Formulare automatisch versandt werden, wenn eine Option in einer Select-Box ausgewählt wird. JavaScript vorauszusetzen, macht es dem Nutzer unmöglich, das Formular ohne JavaScript abzuschicken. Wenn Sie sich auf JavaScript verlassen, kann es zu unvorhersehbaren Werten im Formular und in der Datenbank kommen.</p>
+            <p>Automatisierte Zugänglichkeitswerkzeuge informieren Sie normalerweise, wenn Formularfelder kein Label besitzen. Sie können außerdem die Web Developer Erweiterung benutzen: Forms - View Form Information. Stellen Sie fest, ob alle sichtbaren Felder eine zugehöriges Label besitzen</p>
+            <label for="trigger2" aria-clickable="true" class="open">mehr&hellip;</label> 
+          </article>
+                   
+               <div class="container_3 show_2">
+                  <dl>
+                    <dt>Label verknüpfen/dt>
+                      <dd><strong> Das Label Element muss mit dem zugehörigen Eingabefeld/Auswahlfeld verknüpft werden..</strong></dd>
+                    <dd id="abbr">&lt;label for="eingabe"&gt;text eingeben&lt;/label&gt;
+                        &lt;input id="eingabe" title="geben Sie irgend etwas ein"&gt;</dd>
+                      <dd><strong>Die strukturelle Verknüpfung erfolgt durch Zuweisung des attribute FOR am Label-Element. Der Attribut bezieht sich auf den Attributwert der ID am INPUT-Element.
+                        Bei einigen Formularelementen wie LABEL und INPUT kann das Title-Attribut zum besseren Benutzbarkeit beitragen. 
+                    </strong> </dd>
+                        </dl>
+                      </div>  
+                      </div>  
+                      <div class="row">
+                      <article id="markup">
+                        
+                        <h2>setzen Sie Markup semantisch korrekt ein</h2>
+                       <p> <strong>Warum?</strong> Semantisches Markup ist wichtig, da es dem Browser die Möglichkeit gibt, den Inhalt in einer Weise zu interpretieren, die der Bedeutung angemessen ist. Zusätzlich bevorzugen auch Suchmaschinen semantisches Markup.</p>
+                        <p>Durch die richtige Verwendung von Überschriften können Hilfsmittel eine Dokumentstruktur erstellen, die für Benutzer von Screenreadern sehr nützlich sein kann.</p>
+                        <p>Selbst wenn nicht alle verfügbaren semantischen Informationen von den Hilfsmitteln benutzt werden, ist es für einen Browser unmöglich, Bedeutung aus dem Text zu erhalten, wenn die Website kein semantisches Markup benutzt.</p>
+                        <label for="trigger3" aria-clickable="true">mehr&hellip;</label>
+                      </article>
+                    
+                      <div class="container_5 show_3">
+                        <dl>
+                          <dt>HTML5 Semantic</dt>
+                            <dd><strong>Sinnstiftende Mechanismenen z.B.:Suchmaschienen und Screenreader sind in der Lage Inhalte strukturiert zu indexieren bzw. wiederzugeben wenn semantisch gut strukturiertes Markup vorliegt.</strong> </dd>
+                              </dl>
+                            </div>   
+                            </div>  
+                            <div class="row">
+                
+           
+                                
+           </div>
+                 </div>  
+                 <footer class="footer-wrap clear">
+                  <div class="footer-link">
+                      <ul>
+                      <li><a href="https://www.einfach-fuer-alle.de" title="Einfach für Alle" target="on_blank">Einfach für Alle</a></li>
+                      <li><a href="https://www.barrierefreies-webdesign.de" title="Barrierefreies Webdesign" target="on_blank">Barrierefreies Webdesign</a></li>
+                      <li><a href="https://www.w3.org" title="W3.org" target="on_blank">W3.org</a></li>
+                      <li><a href="https://www.bundesfachstelle-barrierefreiheit.de" title="Bundesfachstelle Barrierefreiheit" target="on_blank">Bundesfachstelle</a></li>
+                      <li><a href="https://www.european-accessibility-act.de/" title="European Accessibility Act" target="on_blank">EAA</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="footer-end">
+                      <a href="impressum.html">Impressum | </a>
+                      <a href ="formular_projektv3.html">Kontakt</a>
+              
+                  </div>
+              
+              
+              
+              </footer>
+                                
+              </body>
+              </html>

@@ -1,0 +1,42 @@
+#header{
+    width:1160px;
+    height:130px;
+    background-image: linear-gradient(white,#d8d8d8);
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+
+#logo{
+    padding-right:10px;
+}
+
+.float-l{
+    float:left;
+}
+
+.float-r{
+    float:right;
+}
+
+.clearfix{
+    display: table;
+    content:"";
+    clear: both;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+input{
+    border-radius: 5px;
+    border-color:#d8d8d8;
+    border-width: 0.5px;
+}
+
+h2{
+    font-style: italic;
+    color:#ce7000;
+}
